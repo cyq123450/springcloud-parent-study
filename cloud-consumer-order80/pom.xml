@@ -2,7 +2,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <!-- 父模块的信息(继承父模块后子模块不用写G和V) -->
     <parent>
         <artifactId>springcloud-parent-demo</artifactId>
         <groupId>com.cyq</groupId>
@@ -10,8 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <!-- 子模块的信息 -->
-    <artifactId>cloud-provider-payment8001</artifactId>
+    <artifactId>cloud-consumer-order80</artifactId>
 
     <dependencies>
         <!-- web -->
@@ -23,28 +21,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-        <!-- mybatis -->
-        <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-        </dependency>
-        <!-- druid -->
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid-spring-boot-starter</artifactId>
-            <version>1.1.10</version> <!-- 写版本号就用子模块的,不写用父模块的-->
-        </dependency>
-        <!-- mysql -->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <scope>compile</scope>
-        </dependency>
-        <!-- jdbc -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-jdbc</artifactId>
         </dependency>
         <!-- devtools -->
         <dependency>
