@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cyq.dao.PaymentMapper">
+
+    <insert id="addPayment" parameterType="payment" useGeneratedKeys="true" keyColumn="id">
+        insert into t_payment (serial) value (#{serial})
+    </insert>
+
+    <select id="getPaymentById" parameterType="long" resultType="payment">
+        select id, serial from t_payment where id = #{id}
+    </select>
+
+</mapper>
