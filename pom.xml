@@ -17,7 +17,9 @@
         <module>cloud-provider-payment8002</module>
         <module>cloud-provider-payment8001</module>
         <module>cloud-provider-payment8004</module>
-        <module>../cloud-consumerzk-order80</module>
+        <module>cloud-consumerzk-order80</module>
+        <module>cloud-expand-eureka-config-server</module>
+        <module>cloud-expand-eureka-server</module>
     </modules>
 
     <!-- 统一管理Jar包版本 -->
